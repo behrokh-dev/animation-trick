@@ -5,6 +5,8 @@ This project is one of my early practice works focused purely on animations and 
 
 🔗 **Live Demo:**  
 https://behrokh-dev.github.io/animation-trick/
+---
+<img width="1895" height="866" alt="Image" src="https://github.com/user-attachments/assets/b37685cf-8bda-4b0f-8aac-b0185fc803c0" />
 
 ---
 

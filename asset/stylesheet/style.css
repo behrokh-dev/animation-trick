@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height:100vh;
+    background: rgb(141, 90, 197);
+}
+.txt{
+    width: 400px;
+    height: 90px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    margin: 300px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    >*{
+        color: white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    >span{
+        font-weight: bolder;
+        font-size: 80px;
+        animation: span .7s linear infinite alternate;
+
+    }
+    >h2{
+        font-size: 50px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    >ul{
+        animation: ul 6s infinite alternate linear;
+        >li{
+            list-style-type: none;
+            font-size: 40px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid deeppink; */
+        }
+    }
+}
+div{
+    >figure{
+        position: relative;
+        >.fixed-avatar{
+            position: fixed;
+            bottom: 40px;   
+            right: 40px;    
+            width: 200px;    
+            height: 200px;
+            border-radius: 50%; 
+            object-fit: cover;
+            z-index: 9999;
+        }
+    }
+    >div{
+        position: fixed;
+        bottom: 40px;
+        right: 250px;
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+        >a{
+            /* border: 1px solid red; */
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            transition: .3s;
+            /* position: fixed; */
+            &:hover{
+                transform: scale(1.3);
+            }
+            &:nth-of-type(1){
+                color:deeppink ;
+            }
+            &:nth-of-type(2){
+                color:deepskyblue ;
+            }
+            &:nth-of-type(3){
+                color:gold ;
+            }
+            &:nth-of-type(4){
+                color:springgreen ;
+            }
+            
+        }
+    }
+}
+@keyframes span{
+    to{ opacity: 0;}
+}
+@keyframes ul{
+    0%{ transform: translateY(0px);}
+    23%{ transform: translateY(0px);}
+    27%{ transform: translateY(-90px);}
+    48%{ transform: translateY(-90px);}
+    53%{ transform: translateY(-180px);}
+    75%{ transform: translateY(-180px);}
+    73%{ transform: translateY(-180px);}
+    77%{ transform: translateY(-270px);}
+    100%{ transform: translateY(-270px);}
+}
